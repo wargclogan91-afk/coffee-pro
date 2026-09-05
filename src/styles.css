@@ -1,0 +1,239 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080706;
+  color: #f4eadc;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.app {
+  max-width: 520px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 18px 16px 100px;
+  background:
+    radial-gradient(circle at top, #352016 0, #080706 42%);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.subtitle {
+  margin-top: 5px;
+  color: #a99989;
+  font-size: 12px;
+}
+
+.balance {
+  text-align: right;
+}
+
+.balance span {
+  display: block;
+  color: #a99989;
+  font-size: 10px;
+}
+
+.balance strong {
+  color: #f0b45b;
+  font-size: 18px;
+}
+
+.card {
+  background: linear-gradient(145deg, #21150f, #100d0a);
+  border: 1px solid #3d281b;
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 12px;
+  box-shadow: 0 10px 30px #0008;
+}
+
+.starter {
+  border-color: #8b5a27;
+}
+
+.starter h2,
+.card h2,
+section > h2 {
+  margin-top: 0;
+}
+
+.card p {
+  color: #aa9a89;
+}
+
+button {
+  background: #d8943d;
+  color: #140d08;
+  border-radius: 12px;
+  padding: 12px 16px;
+}
+
+button:disabled {
+  opacity: .4;
+}
+
+.mining-card {
+  text-align: center;
+  padding: 30px 18px;
+}
+
+.mine-icon {
+  font-size: 58px;
+  margin-bottom: 10px;
+}
+
+.mining-card h1 {
+  margin: 5px 0;
+  font-size: 24px;
+}
+
+.rate {
+  color: #e5a34e !important;
+}
+
+.claim {
+  width: 100%;
+  margin-top: 18px;
+  font-size: 16px;
+  padding: 16px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.stats .card {
+  text-align: center;
+}
+
+.stats span {
+  display: block;
+  color: #9d8d7c;
+  font-size: 12px;
+}
+
+.stats strong {
+  display: block;
+  margin-top: 7px;
+  font-size: 21px;
+}
+
+.miner,
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.miner h3,
+.task h3 {
+  margin: 0;
+}
+
+.miner p,
+.task p {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.big-number {
+  text-align: center;
+  font-size: 55px;
+  font-weight: 900;
+  color: #e2a04d;
+}
+
+.referral {
+  text-align: center;
+}
+
+.referral button {
+  width: 100%;
+}
+
+.wallet p {
+  overflow-wrap: anywhere;
+}
+
+.wallet button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.withdraw {
+  background: #55331e;
+  color: #f5dfc4;
+}
+
+.toast {
+  position: fixed;
+  z-index: 20;
+  left: 16px;
+  right: 16px;
+  top: 12px;
+  max-width: 488px;
+  margin: auto;
+  padding: 13px;
+  text-align: center;
+  border-radius: 12px;
+  background: #352016;
+  border: 1px solid #81532a;
+}
+
+.loading {
+  padding-top: 40vh;
+  text-align: center;
+  color: #d8943d;
+}
+
+.bottom-nav {
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: min(520px, 100%);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 8px;
+  background: #0d0a08ee;
+  border-top: 1px solid #38261a;
+  backdrop-filter: blur(12px);
+}
+
+.bottom-nav button {
+  background: transparent;
+  color: #9e8d7b;
+  padding: 7px 2px;
+  font-size: 18px;
+}
+
+.bottom-nav span {
+  display: block;
+  font-size: 10px;
+  margin-top: 3px;
+}
